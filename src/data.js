@@ -125,10 +125,10 @@ export const data = {
                 company: 'KUNACT',
                 job: 'Chef de projet Web',
                 startingDate: '09/2021',
-                endingDate: '09/2022',
-                description: ['J\'e suis Chef de projet chez KUNACT qui est une Association aide et \
-                accompagne les entrepreneurs pour mener à bien leur projet',
-                'J\'aime la formation','J\'aime la formation'],
+                endingDate: '09/2023',
+                description: ['J\'e suis Chef de projet IT chez KUNACT qui est une Association aide et \
+                accompagne les entrepreneurs pour dévélopper ou méner à bien leur projet',
+                'Redaction du cachier de charge','Migrations vers la nouvelle espace de collaboration', 'Echange avec des representant métier'],
                 logo: 'https://kunact.org/wp-content/uploads/2021/01/logo-kunact-email.png',
                 key: 0,
             },
