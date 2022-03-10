@@ -9,7 +9,7 @@ class Appbar extends React.Component {
   render() {
     return (
       <div>
-        <AppBar position="fixed" color="secondary">
+        {/* <AppBar position="fixed" color="secondary" style={{ backgroundColor: "red"}} >
           <Toolbar>
             <Grid container justify="space-between"  alignItems="center">
               <Grid item> <img src="/images/logo_bleu.png"  alt="logo" style={{width:"60px", height:"40"}}/></Grid>
@@ -21,7 +21,7 @@ class Appbar extends React.Component {
               </Grid>
             </Grid>
           </Toolbar>
-        </AppBar>
+        </AppBar> */}
       </div>
     );
   }

@@ -11,6 +11,8 @@ import Footer from "./contents/Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
 import { useTranslation } from 'react-i18next';
 import {Translation} from "react-i18next";
+//import EmailForm from './components/back/forms/EmailForm';
+//import Button from 'react-bootstrap/Button';
 
 const heading = {
   backgroundColor: '#1d1f26',
@@ -31,7 +33,7 @@ const styles = theme => ({
         }
     },
     navLink: {
-        color: 'white',
+        color: 'black',
         textDecoration: 'none',
         '&:hover': {
             borderBottom: "2px solid #ffe",
@@ -57,10 +59,10 @@ function App({ classes, t }) {
       <BrowserRouter>
           <nav style={heading}>
               <Typography component="div">
-                  <AppBar position="fixed" color="primary" style={{zIndex:1}}>
+                  <AppBar position="fixed" color="" style={{zIndex:1}}>
                       <Toolbar>
                           <Grid container justify="space-between"  alignItems="center">
-                              <Grid container item lg={4} sm={5} alignItems="center" justify="space-around">
+                              <Grid container item lg={3} sm={4} alignItems="center" justify="space-around">
                                   <Grid item>
                                       <a href="https://github.com/dankokonate" target="_blank" rel="noopener noreferrer" >
                                           <img src="https://img.icons8.com/color/2x/github.png"  alt="logo" className={classes.img}/>
@@ -90,7 +92,7 @@ function App({ classes, t }) {
                               </Grid>
                               <Grid container item lg={2} sm={3} justify="space-around">
                                   <Grid item>
-                                      <Typography variant="h6" noWrap >
+                                      <Typography variant="h7" noWrap >
                                           <Link to="/" className={classes.navLink}>
                                               <Translation>
                                                   {
@@ -101,7 +103,7 @@ function App({ classes, t }) {
                                       </Typography> 
                                   </Grid>
                                   <Grid item>
-                                      <Typography variant="h6" noWrap>
+                                      <Typography variant="h7" noWrap>
                                           <Link to="/projects" className={classes.navLink}>
                                               <Translation>
                                                   {
