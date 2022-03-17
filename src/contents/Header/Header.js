@@ -3,6 +3,7 @@ import {Button, Fab, Grid, Typography} from '@material-ui/core';
 import { withStyles } from "@material-ui/core/styles";
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import {Translation} from "react-i18next";
+import Modal from './Modal'
  
 
 const heading = {
@@ -45,6 +46,8 @@ const styles = theme => ({
 
 function Header(props) {
   const { classes } = props;
+  const [open, setOpen] = React.useState(false);
+
   return (
     <div style={heading}>
         <Typography component="div">
@@ -63,7 +66,7 @@ function Header(props) {
                          </Grid>
                         <Grid item>
                             <Typography component="" variant="h5">
-                                <Button  href="https://konatedanko.netlify.app/" variant="contained" color="secondary" size="lg">
+                                <Button onClick={() => setOpen(true)} variant="contained" color="secondary" size="lg">
                                         <Translation>
                                         {
                                             t => <>{t('Contacter-moi')}</>
@@ -114,6 +117,7 @@ function Header(props) {
                 </Grid> 
             </Grid>
         </Typography>
+        {open && <Modal open={open} setOpen={open} />}
     </div>      
   )
 }
