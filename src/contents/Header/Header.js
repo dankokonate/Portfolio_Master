@@ -117,7 +117,7 @@ function Header(props) {
                 </Grid> 
             </Grid>
         </Typography>
-        {open && <Modal open={open} setOpen={open} />}
+        {open && <Modal open={open} setOpen={setOpen} />}
     </div>      
   )
 }
