@@ -65,7 +65,7 @@ function App({ classes, t }) {
                               <Grid container item lg={3} sm={4} alignItems="center" justify="space-around">
                                   <Grid item>
                                       <a href="https://github.com/dankokonate" target="_blank" rel="noopener noreferrer" >
-                                          <img src="https://img.icons8.com/color/2x/github.png"  alt="logo" className={classes.img}/>
+                                          <img src="https://img.icons8.com/color/2x/github.png" width="15" alt="logo" className={classes.img}/>
                                       </a>
                                   </Grid>
                                   <Grid item>
@@ -75,7 +75,7 @@ function App({ classes, t }) {
                                   </Grid>
                                   <Grid item>
                                       <a href="mailto:dankokonate@gmail.com" target="_blank" rel="noopener noreferrer" >
-                                          <img src="https://img.icons8.com/color/48/000000/gmail--v1.png"  alt="logo" className={classes.img}/>
+                                          <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="logo" className={classes.img}/>
                                       </a>
                                   </Grid>
                                   |
