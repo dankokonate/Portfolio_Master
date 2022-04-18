@@ -8,10 +8,10 @@ import { Height } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
-    display: 'flex',
+    display: 'grid',
     alignItems: 'center',
     justifyContent: 'center',
-    position: 'absolute',
+    position: 'relative',
     top: 0,
     left: 0,
     width: '100%',
