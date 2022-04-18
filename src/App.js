@@ -11,7 +11,7 @@ import Footer from "./contents/Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
 import { useTranslation } from 'react-i18next';
 import {Translation} from "react-i18next";
-//import EmailForm from './components/back/forms/EmailForm';
+import EmailForm from './components/back/forms/EmailForm';
 //import Button from 'react-bootstrap/Button';
 
 const heading = {
@@ -28,7 +28,7 @@ const styles = theme => ({
     },
     mobileSize: {
         [theme.breakpoints.down("sm")]: {
-            width:400,
+            width:480,
             marginLeft: 100
         }
     },
@@ -44,7 +44,8 @@ const styles = theme => ({
         backgroundColor: '#090A0D',
     },
     img: {
-        width:40, height:'auto'
+        width:'25px', height:'auto',panding: '5px'
+        
     },
 });
 
@@ -62,23 +63,30 @@ function App({ classes, t }) {
                   <AppBar position="fixed" color="" style={{zIndex:1}}>
                       <Toolbar>
                           <Grid container justify="space-between"  alignItems="center">
-                              <Grid container item lg={3} sm={4} alignItems="center" justify="space-around">
+                              <Grid container item lg={4} sm={5} alignItems="center" justify="space-around">
+                                  
                                   <Grid item>
+                                  <Button>
                                       <a href="https://github.com/dankokonate" target="_blank" rel="noopener noreferrer" >
-                                          <img src="https://img.icons8.com/color/2x/github.png" width="15" alt="logo" className={classes.img}/>
+                                          <img src="https://img.icons8.com/color/2x/github.png" alt="logo" className={classes.img}/>
                                       </a>
+                                    </Button>
                                   </Grid>
+                            
                                   <Grid item>
+                                  <Button>
                                       <a href="https://www.linkedin.com/in/danko-konate-2a5756157/" target="_blank" rel="noopener noreferrer" >
                                           <img src="https://img.icons8.com/color/72/linkedin-circled.png"  alt="logo" className={classes.img}/>
                                       </a>
+                                    </Button>
                                   </Grid>
                                   <Grid item>
+                                      <Button>
                                       <a href="mailto:dankokonate@gmail.com" target="_blank" rel="noopener noreferrer" >
                                           <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="logo" className={classes.img}/>
                                       </a>
+                                      </Button>
                                   </Grid>
-                                  |
                                   <Grid item>
                                       <Button onClick={() => changeLanguage('fr')}>
                                             <img src={"https://img.icons8.com/color/2x/france-circular.png"} alt="france-flag" className={classes.img}/>

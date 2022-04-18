@@ -15,22 +15,33 @@ function EmailForm(props) {
         }).catch(err =>{console.log(err)});
     }
  return(
-     <div className="container border"
-        style={{marginTop : "50px", width: '50%',
+     <div className="container"
+        style={{marginTop : "50px", width: '500px', height:'100%',
          backgroundPosition: 'center',
-         backgroundSize: 'cover'
+         backgroundSize: 'cover',
      }}>
          <h2 style={{marginTop:'15px'}}> Contacter-moi</h2>
-         { <form>
-             <label>Nom</label>
-             <input type= 'text' name='Nom' placeholder='Votre nom ?'/>
+         {<form className='formContact'>
+             <div className='itemform'>
+                 <label className='labelform'>Nom</label>
+                 <input type='text' name='Nom' placeholder='Votre nom ?' />
+             </div>
 
-             <label>Email</label>
-             <input type= 'email' name='email' placeholder='Votre Email ?'/>
+             <div className='itemform'>
+                 <label className='labelform'>Email</label>
+                 <input type='email' name='Email' placeholder='Votre Email ?' />
+             </div>
 
-             <label>Message</label>
-             <textarea name='message' rows= '4'/>
-             <input type='submit' value= 'Envoyer'/>
+             <div className='itemform'>
+                 <label className='labelform'>Sujet</label>
+                 <input type='text' name='Sujet' placeholder='Sujet' />
+             </div>
+
+             <div className='itemform'>
+                 <label className='labelform'>Message</label>
+                 <textarea name='message' rows='4' />
+                 <input type='submit' value='Envoyer' />
+             </div>
 
          </form> }
      </div>
