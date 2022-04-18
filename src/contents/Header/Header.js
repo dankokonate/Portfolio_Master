@@ -18,7 +18,7 @@ const heading = {
 
 
 const info = {
-    paddingTop: '10%',
+    paddingTop: '20%',
 }
 
 const styles = theme => ({

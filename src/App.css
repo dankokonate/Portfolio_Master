@@ -76,3 +76,11 @@ input[type=submit] {
   width: 10px;
   height: auto;
 }
+
+.container{
+  margin-top : 50px;
+  width : auto; 
+  height:100%;
+  background-position: 'center';
+  background-size: 'cover';
+}

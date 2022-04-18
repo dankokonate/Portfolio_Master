@@ -15,11 +15,7 @@ function EmailForm(props) {
         }).catch(err =>{console.log(err)});
     }
  return(
-     <div className="container"
-        style={{marginTop : "50px", width: '500px', height:'100%',
-         backgroundPosition: 'center',
-         backgroundSize: 'cover',
-     }}>
+     <div className="container">
          <h2 style={{marginTop:'15px'}}> Contacter-moi</h2>
          {<form className='formContact'>
              <div className='itemform'>
